@@ -5,7 +5,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 // import { ThemeContexts } from "../contexts/ThemeContexts";
 import { GetwindowArea } from "../hooks/utility";
 import { useTheme } from "../hooks/useTheme";
-import CountryDetailShimmer from "./SimmerDetail";
+
 
 
 
@@ -76,7 +76,7 @@ export default function CountryDetail() {
     return <h1 style={{ color: "red" }}>Country Not Found</h1>;
   }
   return countryData === null ? (
-  <><CountryDetailShimmer/></>
+  "Loding..."
   ) : (<>
   
     <main className={`${isDark?'dark':''}`}>
